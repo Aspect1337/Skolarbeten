@@ -15,6 +15,7 @@ int getConsonants(char* buffer, char* kons)
     return counter;
 }
 
+//Detta borde splitras i flera funktioner 
 void getFile()
 {
     char* buffer = 0;
@@ -64,8 +65,6 @@ void getFile()
     translatedBuffer[totalLength] = '\0';
     printf("%s", translatedBuffer);
     FILE* output = fopen("output.txt", "w"); 
-
-//    for(int i = 0; < totalLenght; i++)
 
     fprintf(output, translatedBuffer);
 
