@@ -1,0 +1,1 @@
+void calcIfPlayerWon(int playerBet, int computerBet);
