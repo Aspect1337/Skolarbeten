@@ -15,7 +15,7 @@ int getConsonants(char* buffer, char* kons)
     return counter;
 }
 
-//Detta borde splitras i flera funktioner 
+//Detta kan behövas splitras i 3 funktioner
 void getFile()
 {
     char* buffer = 0;
