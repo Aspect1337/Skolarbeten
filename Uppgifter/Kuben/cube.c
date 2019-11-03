@@ -12,7 +12,6 @@
 #include "calculator.h"
 
 //Initialize "main"
-
 int main()
 {
     double cubeLength;
