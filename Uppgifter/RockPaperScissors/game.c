@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 #include "calcResults.h"
 #include "promptPlayer.h"
@@ -20,9 +21,13 @@
 int main()
 {
     //Keeping it consize and clearing it once upon start
+    char goAgain = 'j';
+    
     system("cls");
-    while(EOF)
+    while(toupper(goAgain) == 'J')
     {
         calcIfPlayerWon(promptPlayer(), getRandomNumber());
+        printf("Again?");
+        scanf("%s", &goAgain);
     }
 }
